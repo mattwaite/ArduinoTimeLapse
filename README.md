@@ -1,1 +1,1 @@
-Takes code from the [Adafruit TTL Serial Camera tutorial](http://learn.adafruit.com/ttl-serial-camera/overview) and modifies it so that an image is taken every minute or so and the file names increment up through 100,000. 
+Takes code from the [Adafruit TTL Serial Camera tutorial](http://learn.adafruit.com/ttl-serial-camera/overview) and modifies it so that an image is taken one minute after the file is written and the file names increment up through 100,000. 
