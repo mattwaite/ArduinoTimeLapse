@@ -133,10 +133,9 @@ void loop() {
     Serial.println("Picture taken!");
   
   // Create an image with the name IMAGExx.JPG
-  char filename[13];
-  strcpy(filename, "IMAGE00.JPG");
+  char filename[]="";
   for (int i = 0; i < 10000; i++) {
-    filename[6] = '0' + i;
+    sprintf(filename,"%05d.jpg",i);
     // create if does not exist, do not open existing, write, sync after write
     if (! SD.exists(filename)) {
       break;
