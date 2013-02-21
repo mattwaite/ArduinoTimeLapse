@@ -132,7 +132,7 @@ void loop() {
   else 
     Serial.println("Picture taken!");
   
-  // Create an image with the name IMAGExx.JPG
+  // Create an image with the name xxxxx.JPG
   char filename[]="";
   for (int i = 0; i < 10000; i++) {
     sprintf(filename,"%05d.jpg",i);
