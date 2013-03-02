@@ -93,6 +93,9 @@ void setup() {
     return;
   }  
   
+}
+
+void loop() {
   // Try to locate the camera
   if (cam.begin()) {
     Serial.println("Camera Found:");
@@ -124,9 +127,6 @@ void setup() {
   if (imgsize == VC0706_320x240) Serial.println("320x240");
   if (imgsize == VC0706_160x120) Serial.println("160x120");
 
-}
-
-void loop() {
     if (! cam.takePicture()) 
     Serial.println("Failed to snap!");
   else 
